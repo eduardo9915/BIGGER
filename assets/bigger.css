@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 16vh;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+}
+
+header img{
+    width: auto;
+    height: 16vh;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+main img{
+    padding-top: 16vh;
+    height: auto;
+    width: 100%;
+}
+
+.inicio {
+    align-items: center;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(244, 250, 255);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 15px 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leiaAtentamente {
+    color: rgb(210, 0, 0);
+}
+
+#informaçõesPrincipais {
+    padding: 30px;
+}
+
+#video {
+    padding: 20px;
+}
+
+.finais h3{
+    color: rgb(210, 0, 0);
+}
+
+.mensalidade {
+    font-size: 35px;
+    color: green;
+}
+
+#informaçõesPrincipais h3{
+    color: rgb(210, 0, 0);
+}
+
+.responsavel {
+    padding: 5px;
+    color: rgb(210, 0, 0);
+}
+
+footer {
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 15%;
+    background: linear-gradient(rgb(210, 0, 0), black);
+}
