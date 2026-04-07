@@ -1,0 +1,499 @@
+.blocoA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.blocoA img{
+    width: 120px;
+    height: 120px;
+}
+
+.blocoB {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: solid red 3px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.secaoA {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.contato button{
+    color: white;
+    border: solid 0px red;
+    border-radius: 50px;
+    background-color: red;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.contato button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.contato button:active {
+    transform: scale(0.95);
+    background-color: #990000;
+}
+
+.contato p{
+    font-weight: 600;
+}
+
+/* Responsividade para Header e Footer - Página Matrícula */
+
+/* Dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto !important;
+        min-height: 20vh !important;
+    }
+    
+    header img {
+        height: 12vh !important;
+    }
+    
+    #links {
+        flex-direction: column !important;
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+    
+    #links a {
+        font-size: 14px !important;
+        padding: 5px 10px !important;
+    }
+    
+    hr {
+        width: 95% !important;
+    }
+    
+    main {
+        padding-top: 30vh !important;
+    }
+    
+    footer {
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 15px !important;
+        height: auto !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    
+    .footer {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+    
+    .footer p {
+        font-size: 14px !important;
+        margin: 5px 0 !important;
+    }
+    
+    .footer b {
+        font-size: 15px !important;
+    }
+    
+    .blocoA {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .blocoA img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    
+    .blocoB {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    
+    .contato {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .contato button {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .contato p {
+        font-size: 14px;
+    }
+    
+    .secaoA {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 20vh !important;
+    }
+    
+    header img {
+        height: 14vh !important;
+    }
+    
+    #links {
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+    }
+    
+    main {
+        padding-top: 22vh !important;
+    }
+    
+    footer {
+        padding: 15px !important;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+    
+    .footer {
+        flex: 1 !important;
+        min-width: 200px !important;
+        text-align: center !important;
+    }
+    
+    .footer p {
+        font-size: 15px !important;
+        margin: 8px 0 !important;
+    }
+    
+    .footer b {
+        font-size: 16px !important;
+    }
+    
+    .blocoA {
+        width: 85%;
+        gap: 30px;
+    }
+    
+    .blocoA img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .blocoB {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .contato {
+        gap: 15px;
+    }
+    
+    .contato button {
+        width: 70px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .contato p {
+        font-size: 16px;
+    }
+    
+    .secaoA {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Large screens (1025px+) */
+@media screen and (min-width: 1025px) {
+    .secaoA {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .blocoA {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .blocoB {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Modo paisagem em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        height: auto !important;
+        min-height: 15vh !important;
+    }
+    
+    header img {
+        height: 10vh !important;
+    }
+    
+    #links {
+        flex-direction: row !important;
+        padding: 5px !important;
+    }
+    
+    main {
+        padding-top: 18vh !important;
+    }
+    
+    footer {
+        padding: 10px !important;
+        gap: 10px !important;
+    }
+    
+    .footer p {
+        font-size: 12px !important;
+        margin: 3px 0 !important;
+    }
+    
+    .footer b {
+        font-size: 13px !important;
+    }
+    
+    .blocoA {
+        width: 90%;
+        gap: 15px;
+    }
+    
+    .blocoA img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .blocoB {
+        width: 85%;
+        padding: 10px 15px;
+    }
+    
+    .contato {
+        gap: 8px;
+    }
+    
+    .contato button {
+        width: 60px;
+        height: 35px;
+        font-size: 11px;
+    }
+    
+    .contato p {
+        font-size: 13px;
+    }
+    
+    .secaoA {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Responsividade para página Matrícula */
+
+/* Dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+    #alerta {
+        width: 90%;
+        height: auto;
+        padding: 15px 10px;
+        margin: 0 auto;
+    }
+    
+    #alerta b {
+        font-size: 14px;
+    }
+    
+    .blocoA {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .blocoA img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    
+    .blocoB {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    
+    .contato {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .contato button {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .contato p {
+        font-size: 14px;
+    }
+    
+    .secaoA {
+        padding: 15px;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #alerta {
+        width: 50%;
+        height: auto;
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+    
+    #alerta b {
+        font-size: 16px;
+    }
+    
+    .blocoA {
+        width: 85%;
+        gap: 30px;
+    }
+    
+    .blocoA img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .blocoB {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .contato {
+        gap: 15px;
+    }
+    
+    .contato button {
+        width: 70px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .contato p {
+        font-size: 16px;
+    }
+    
+    .secaoA {
+        padding: 20px;
+    }
+}
+
+/* Large screens (1025px+) */
+@media screen and (min-width: 1025px) {
+    .secaoA {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .blocoA {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .blocoB {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Modo paisagem em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #alerta {
+        width: 60%;
+        height: auto;
+        padding: 10px 15px;
+    }
+    
+    #alerta b {
+        font-size: 12px;
+    }
+    
+    .blocoA {
+        width: 90%;
+        gap: 15px;
+    }
+    
+    .blocoA img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .blocoB {
+        width: 85%;
+        padding: 10px 15px;
+    }
+    
+    .contato {
+        gap: 8px;
+    }
+    
+    .contato button {
+        width: 60px;
+        height: 35px;
+        font-size: 11px;
+    }
+    
+    .contato p {
+        font-size: 13px;
+    }
+    
+    .secaoA {
+        padding: 10px;
+    }
+}
