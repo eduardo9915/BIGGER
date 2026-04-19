@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/matricula.css">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+    <title>Quero me matricular</title>
+</head>
+<body>
+    <header>
+        <script>
+            window.alert('Esta etapa é de suma importância, por favor, leia com muita atenção.')
+        </script>
+        <img src="../images/BIGGER.png" alt="logo BIGGER">
+        <hr><br>
+        <div id="links">
+            <a href="index copy.html">Início</a>
+            <a href="sobre.html">Sobre Design Digital</a>
+            <a href="matricula.html">Como me martricular</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="secaoA">
+            <h1>Como me matricular:</h1>
+            <div class="blocoA">
+
+                <a href="../docs/CONTRATO DE MATRÍCULA.pdf" download="CONTRATO DE MATRÍCULA"><img src="../images/176040.png" alt="document"> <br>CONTRATO DE MATRÍCULA</a>
+                <a href="../docs/RESOLUÇÃO DA TAXA DE MATRÍCULA.pdf" download="RESOLUÇÃO DA TAXA DE MATRÍCULA"><img src="../images/176040.png" alt="document"> <br>RESOLUÇÃO DA TAXA DE MATRÍCULA</a>
+
+            </div>
+
+            <p>Baixe os documentos acima e assine todos os que forem nescessários, após isso, entre em contato e envie os documentos assinados solicitando a matrícula do aluno, lá será esclarecida qualquer dúvida. As matrículas para o curso são realizadas exclusivamente dentro dos períodos de cada edição. <b>O curso oferece duas edições ao longo do ano</b>: a primeira, com aulas <b>de fevereiro a maio</b>, e a segunda, <b>de agosto a novembro.</b></p>
+        </section>
+
+        <section class="secaoB">
+            <div class="blocoB">
+                <h4>Contato:</h4>
+
+                <div class="contato">
+                    <p>Whatsapp: +55 (71) 99196-3451</p> <button onclick="copiarWhatsapp()">Copiar</button>
+                </div>
+
+                <div class="contato">
+                    <p>E-mail: cursobigger@gmail.com</p> <button onclick="copiarEmail()">Copiar</button>
+                </div>
+
+                <div class="contato">
+                    <p>Instagram: @biggeroficial</p> <button onclick="copiarInstagram()">Copiar</button>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var copiarWhatsapp = function() {
+                navigator.clipboard.writeText("+55 (71) 99196-3451");
+            }
+            var copiarEmail = function() {
+                navigator.clipboard.writeText("cursobigger@gmail.com");
+            }
+            var copiarInstagram = function() {
+                navigator.clipboard.writeText("@biggeroficial");
+            }
+        </script>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p><b>Email:</b></p>
+            <p>cursobigger@gmail.com</p>
+        </div>
+
+        <div class="footer">
+            <p><b>Whatsapp:</b></p>
+            <p>71 99196-3451</p>
+        </div>
+
+        <div class="footer">
+            <p><b>Instragram:</b></p>
+            <p>@cursobigger_oficial</p>
+        </div>
+    </footer>
+</body>
+</html>
