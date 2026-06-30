@@ -1,0 +1,255 @@
+.blocoA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(49, 45, 45, 0.9);
+}
+
+.blocoA b{
+    color: white;
+}
+
+.blocoA p{
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+}
+
+section {
+    padding-top: 20px;
+}
+
+.secaoB img {
+    width: 25%;
+}
+
+/* Responsividade para página Sobre */
+
+/* Dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+    .blocoA {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .blocoA p {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .blocoA b {
+        font-size: 16px;
+    }
+    
+    .secaoB img {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    section {
+        padding-top: 15px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .blocoA {
+        flex-direction: column;
+        padding: 25px;
+    }
+    
+    .blocoA p {
+        padding: 20px 40px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .blocoA b {
+        font-size: 17px;
+    }
+    
+    .secaoB img {
+        width: 50%;
+        margin: 25px auto;
+        display: block;
+    }
+    
+    section {
+        padding-top: 25px;
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* Large screens (1025px+) - Mantém layout original com pequenos ajustes */
+@media screen and (min-width: 1025px) {
+    .blocoA {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .blocoA p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Modo paisagem em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .blocoA {
+        padding: 10px;
+    }
+    
+    .blocoA p {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .secaoB img {
+        width: 40%;
+        margin: 10px auto;
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+/* Efeitos hover para melhor usabilidade */
+@media screen and (min-width: 769px) {
+    .blocoA:hover {
+        transform: translateY(-3px);
+        transition: transform 0.3s ease;
+        box-shadow: 12px 12px 20px rgba(49, 45, 45, 0.95);
+    }
+    
+    .secaoB img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Responsividade específica para o footer */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .footer {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    .footer b {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .footer {
+        flex: 1;
+        min-width: 200px;
+        text-align: center;
+    }
+    
+    .footer p {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+    
+    .footer b {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    footer {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+    
+    .footer b {
+        font-size: 13px;
+    }
+}

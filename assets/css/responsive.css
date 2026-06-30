@@ -1,0 +1,240 @@
+/* CSS Responsivo - Complemento sem modificar código existente */
+
+/* Dispositivos móveis (até 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 20vh;
+    }
+    
+    header img {
+        height: 12vh;
+    }
+    
+    #links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    #links a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    hr {
+        width: 95%;
+    }
+    
+    main img{
+        padding-top: 12vh;
+    }
+    
+    .secaoA {
+        padding: 2vh;
+    }
+    
+    .secaoB {
+        flex-direction: column;
+        padding: 2vh;
+    }
+    
+    .secaoB img {
+        height: auto;
+        width: 100%;
+        max-height: 40vh;
+        object-fit: contain;
+        margin-top: 2vh;
+    }
+    
+    .blocoA {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .blocoA p {
+        padding: 2vh;
+        font-size: 14px;
+    }
+    
+    .blocoB {
+        width: 95%;
+        margin: 0 auto;
+        padding: 3vh;
+    }
+    
+    h1 {
+        font-size: 18px;
+        padding: 2vh;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        height: auto;
+    }
+    
+    .footer {
+        width: 100%;
+    }
+    
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 20vh;
+    }
+    
+    header img {
+        height: 14vh;
+    }
+    
+    #links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    main img{
+        padding-top: 12vh;
+    }
+    
+    .secaoB {
+        flex-direction: column;
+        padding: 3vh;
+    }
+    
+    .secaoB img {
+        height: auto;
+        width: 80%;
+        max-height: 50vh;
+        object-fit: contain;
+        margin-top: 2vh;
+    }
+    
+    .blocoA {
+        width: 85%;
+    }
+    
+    .blocoB {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    footer {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .footer {
+        flex: 1;
+        min-width: 200px;
+    }
+}
+
+/* Large screens (1025px+) - Mantém layout original com pequenos ajustes */
+@media screen and (min-width: 1025px) {
+    .secaoB img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .blocoA {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .blocoB {
+        max-width: 500px;
+    }
+}
+
+/* Ajustes para orientação paisagem em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        height: auto;
+        min-height: 15vh;
+    }
+    
+    header img {
+        height: 10vh;
+    }
+    
+    #links {
+        flex-direction: row;
+        padding: 5px;
+    }
+    
+    main img{
+        padding-top: 12vh;
+    }
+    
+    .secaoA {
+        padding: 1vh;
+    }
+    
+    .blocoA p {
+        padding: 2vh;
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 16px;
+        padding: 1vh;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+}
+
+/* Melhorias de acessibilidade e usabilidade */
+@media screen and (max-width: 768px) {
+    #links a:hover {
+        background-color: rgba(255, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .blocoA:hover {
+        transform: translateY(-2px);
+        transition: transform 0.3s ease;
+    }
+    
+    .blocoB:hover {
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+    }
+}
